@@ -185,5 +185,9 @@ body {
 	height: unset!important;
 }
 
+.showPointer{
+	cursor: pointer;
+}
+
 
 
