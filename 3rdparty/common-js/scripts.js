@@ -202,7 +202,8 @@ function isExists(elem){
 	return false;
 }
 
-function setModal(title,description,link,gamejolt=''){
+function setModal(title,description,link,duration,gamejolt=''){
+	$("#duration").text(duration);
 	$("#videoModal h3 b").text(title);
 	$("#videoModal h6").text(description);
 	$("#gamejolt").attr('href', gamejolt);
