@@ -172,11 +172,23 @@ b.max-bold{ font-weight: 700; }
 	border-top: 1px solid #2b2b2b;
 }
 
+.company {
+	display: table;
+	margin: 0 auto;
+	padding: 0px;
+}
+
 .overPadd {
 	padding: 30px;
 }
 
-.gamejolt{
+.duration {
+	display: table;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.hyperlink {
 	display: table;
 	margin: 0 auto;
 }

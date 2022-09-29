@@ -202,17 +202,24 @@ function isExists(elem){
 	return false;
 }
 
-function setModal(title,description,link,duration,gamejolt=''){
+function setModal(
+	title,
+	company,
+	description,
+	link,
+	duration,
+	officialpage=''){
 	$("#duration").text(duration);
+	$("#company").text(company);
 	$("#videoModal h3 b").text(title);
 	$("#videoModal h6").text(description);
-	$("#gamejolt").attr('href', gamejolt);
+	$("#officialpage").attr('href', officialpage);
 
-	if(gamejolt === '')
+	if(officialpage === '')
 	{
-		$("#gamejolt").text('');
+		$("#officialpage").text('');
 	}else {
-		$("#gamejolt").text('GameJolt');
+		$("#officialpage").text('Official Page');
 	}
 
 
