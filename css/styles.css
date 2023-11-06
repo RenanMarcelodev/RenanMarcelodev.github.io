@@ -66,10 +66,10 @@ b.max-bold{ font-weight: 700; }
 .font-lite-yellow{ color: #FFA804; }
 
 .intro-section{ padding: 50px 0; position: relative; background-size: cover; 
-	z-index: 1;background: rgb(227, 160, 92); }
+	z-index: 1;background: rgb(73, 119, 194); }
 
 .intro-section:before{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; left: 0; 
-	right: 0; background: rgba(227, 160, 92, 0.2); }
+	right: 0; background: rgba(73, 119, 194, 0.2); }
 
 .intro-section .heading-wrapper{ border-radius: 5px; padding: 30px 40px 20px; margin-bottom: 50px;
 	background: #e3a05c; color: #e3a05c; }
