@@ -111,3 +111,44 @@
 
 	
 }
+
+/* Default styles for all screen sizes */
+/* Add this to your existing CSS file */
+
+/* Your existing styles go here */
+
+/* Media query for smartphones (less than 768px wide) */
+@media (max-width: 767px) {
+	/* Add your responsive styles here */
+	html {
+		font-size: 87.5%; /* Adjust font size for smaller screens */
+	}
+	.intro-section {
+		padding: 20px 0; /* Adjust the padding for the intro section */
+	}
+	.intro .profile-img {
+		bottom: -92px; /* Adjust image position */
+		left: -50px;
+		width: 300px; /* Adjust image size */
+		height: 300px;
+	}
+	.intro .downlad-btn {
+		padding: 10px 20px; /* Adjust button size */
+		margin-top: 15px; /* Adjust button margin */
+	}
+	.experience .list > li {
+		margin-bottom: 5px; /* Adjust spacing between experience items */
+	}
+	.portfolio-section .portfolioFilter a {
+		margin: 10px 5px 0 0; /* Adjust spacing between filter links */
+	}
+	.portfolio-section .p-item {
+		width: 50%; /* Two items per row */
+	}
+	.education-wrapper:after {
+		display: none; /* Remove the vertical line in education */
+	}
+	.education-wrapper .education:after {
+		display: none; /* Remove the circular bullets in education */
+	}
+}
