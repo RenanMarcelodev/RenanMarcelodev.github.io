@@ -1,34 +1,9 @@
-
-
-/* Screens Resolution : 992px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 1200px) {
-	
-}
-
-/* Screens Resolution : 992px
--------------------------------------------------------------------------- */
 @media only screen and (max-width: 992px) {
-
-	
-
-
-	
-	/* ---------------------------------
-	7. EDUCATION SECTION
-	--------------------------------- */
-	
 	.education-wrapper:after,
 	.education-wrapper .education:after{ display: none; }
 }
 
-/* Screens Resolution : 767px
--------------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
-	
-	/* ---------------------------------
-	1. PRIMARY STYLES
-	--------------------------------- */
 
 	p{ line-height: 1.4; }
 
@@ -36,28 +11,11 @@
 	h2{ font-size: 2em; }
 	h3{ font-size: 1.8em; }
 
-
-	
-	/* ---------------------------------
-	2. COMMONS FOR PAGE DESIGN
-	--------------------------------- */
-
 	.section{ padding: 50px 0 0px; }
 
 	.section .heading{ margin-bottom: 30px; }
 
-	
-	/* ---------------------------------
-	3. INTRO SECTION
-	--------------------------------- */
-
-	/* INTRO */
-
 	.intro .downlad-btn{ float: none; }
-	
-		/* ---------------------------------
-	6. PORFOLIO SECTION
-	--------------------------------- */
 	
 	.portfolio-section .portfolioFilter{ margin-top: 0px; margin-bottom: 20px; }
 	
@@ -65,90 +23,79 @@
 	
 }
 
-/* Screens Resolution : 575px
--------------------------------------------------------------------------- */
 @media only screen and (max-width: 575px) {
-	
-	/* ---------------------------------
-	1. PRIMARY STYLES
-	--------------------------------- */
 
 	body{ font-size: 14px;  }
-	
-	/* ---------------------------------
-	6. PORFOLIO SECTION
-	--------------------------------- */
 
 	.portfolio-section .p-item{ width: 100%; }
 	
 }
 
-/* Screens Resolution : 479px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 479px) {
-
-
-}
-
-/* Screens Resolution : 359px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 359px) {
-	
-	
-
-}
-
-/* Screens Resolution : 290px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 290px) {
-
-	
-}
-
-/* Screens Resolution : 290px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 260px) {
-
-	
-}
-
-/* Default styles for all screen sizes */
-/* Add this to your existing CSS file */
-
-/* Your existing styles go here */
-
-/* Media query for smartphones (less than 768px wide) */
 @media (max-width: 767px) {
-	/* Add your responsive styles here */
 	html {
-		font-size: 87.5%; /* Adjust font size for smaller screens */
+		font-size: 87.5%;
 	}
 	.intro-section {
-		padding: 20px 0; /* Adjust the padding for the intro section */
+		padding: 20px 0;
 	}
 	.intro .profile-img {
-		bottom: -92px; /* Adjust image position */
+		bottom: -92px;
 		left: -50px;
-		width: 300px; /* Adjust image size */
+		width: 300px;
 		height: 300px;
 	}
 	.intro .downlad-btn {
-		padding: 10px 20px; /* Adjust button size */
-		margin-top: 15px; /* Adjust button margin */
+		padding: 10px 20px;
+		margin-top: 15px;
 	}
-	.experience .list > li {
-		margin-bottom: 5px; /* Adjust spacing between experience items */
+	.work-experience .list > li {
+		margin-bottom: 5px;
+	}
+	.tools-experience .list > li {
+		margin-bottom: 5px;
 	}
 	.portfolio-section .portfolioFilter a {
-		margin: 10px 5px 0 0; /* Adjust spacing between filter links */
+		margin: 10px 5px 0 0;
 	}
 	.portfolio-section .p-item {
-		width: 50%; /* Two items per row */
+		width: 50%;
 	}
 	.education-wrapper:after {
-		display: none; /* Remove the vertical line in education */
+		display: none;
 	}
 	.education-wrapper .education:after {
-		display: none; /* Remove the circular bullets in education */
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.about-me-section .section-title {
+		font-size: 24px;
+	}
+
+	.about-me-text {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.tools-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+
+	.tools-item img {
+		width: 80px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.tools-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+
+	.tools-item img {
+		width: 60px;
 	}
 }
