@@ -334,6 +334,19 @@ b.max-bold {
     border: 2px solid #ffffff;
 }
 
+.about-me-text-first {
+    color: #ffffff;
+    max-width: 800px; 
+    word-wrap: break-word; 
+    margin-bottom: 20px;
+}
+
+.about-me-text-second {
+    color: #ffffff;
+    max-width: 800px; 
+    word-wrap: break-word;
+}
+
 .work-experience .list > li {
     display: block;
     position: relative;
