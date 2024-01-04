@@ -7,10 +7,10 @@
     --highlight-color: #33D1FF;
     --semi-transparent-black: rgba(0, 0, 0, .3);
     --dark-grey: #2b2b2b;
-    --intro-background-color: #071636;
+    --intro-background-color: #365d9b;
     --education-shadow-color: rgba(51, 209, 255, 0.33);
-    --modal-color: #071636;
-    --navbar-color: #000000;
+    --modal-color: #365d9b;
+    --navbar-color: #2b2b2b;
     --navbar-text-color: #ffffff;
     --navbar-height: 60px;
 }
@@ -194,6 +194,7 @@ b.max-bold {
 }
 
 .intro-section {
+    margin-top: 60px;
     padding: 50px 0;
     position: relative;
     background-size: cover;
@@ -591,8 +592,8 @@ body {
 }
 
 .navbar-custom a {
-    color: var(--navbar-text-color); /* Adjust link color as needed */
+    color: var(--navbar-text-color);
     margin-left: 20px;
     text-decoration: none;
-    font-size: 16px; /* Adjust font size as needed */
+    font-size: 16px;
 }
