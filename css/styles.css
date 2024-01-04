@@ -1,19 +1,18 @@
 :root {
-    --background-color: #ffffff;
+    --white-color: #ffffff;
     --primary-text-color: #000000;
     --body-text-color: #333;
     --border-color: #ccc;
     --footer-background: #2b2b2b;
     --highlight-color: #33D1FF;
     --semi-transparent-black: rgba(0, 0, 0, .3);
-    --dark-grey: rgb(43, 43, 43);
-    --accent-color: #e3a05c;
-    --background-color0: rgb(255, 255, 255);
-    --background-color1: #071636;
-    --background-color2: rgba(73, 119, 194, 0.2);
-    --background-color3: rgba(51, 209, 255, 0.33);
-    --background-color4: #fff;
+    --dark-grey: #2b2b2b;
+    --intro-background-color: #071636;
+    --education-shadow-color: rgba(51, 209, 255, 0.33);
     --modal-color: #071636;
+    --navbar-color: #000000;
+    --navbar-text-color: #ffffff;
+    --navbar-height: 60px;
 }
 
 html {
@@ -56,7 +55,7 @@ p {
     line-height: 1.6;
     font-size: 1em;
     font-weight: 400;
-    color: var(--background-color);
+    color: var(--white-color);
 }
 
 h1 {
@@ -182,12 +181,12 @@ b.max-bold {
 }
 
 .font-semi-white {
-    color: var(--background-color);
+    color: var(--white-color);
 }
 
 
 .font-lite-white {
-    color: var(--background-color);
+    color: var(--white-color);
 }
 
 .font-lite-blue {
@@ -199,7 +198,7 @@ b.max-bold {
     position: relative;
     background-size: cover;
     z-index: 1;
-    background: var(--background-color1);
+    background: var(--intro-background-color);
 }
 
 .intro-section:before {
@@ -210,15 +209,14 @@ b.max-bold {
     bottom: 0;
     left: 0;
     right: 0;
-    background: var(--background-color2);
 }
 
 .intro-section .heading-wrapper {
     border-radius: 5px;
     padding: 30px 40px 20px;
     margin-bottom: 50px;
-    background: var(--accent-color);
-    color: var(--accent-color);
+    background: var(--intro-background-color);
+    color: var(--intro-background-color);
 }
 
 .intro-section .info {
@@ -262,7 +260,7 @@ b.max-bold {
     margin: 0 5px 5px;
     text-align: center;
     background: var(--footer-background);
-    color: var(--background-color4);
+    color: var(--white-color);
 }
 
 .intro .social-icons > li > a:after {
@@ -294,7 +292,7 @@ b.max-bold {
     margin-top: 30px;
     box-shadow: inset 0 0 4px var(--semi-transparent-black);
     background: var(--footer-background);
-    color: var(--background-color);
+    color: var(--white-color);
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
 }
@@ -314,7 +312,7 @@ b.max-bold {
     font-size: 2.2em;
     font-weight: 500;
     padding-bottom: 25px !important;
-    color: var(--background-color) !important;
+    color: var(--white-color) !important;
 }
 
 .radial-progress .progressbar-text:after {
@@ -329,7 +327,7 @@ b.max-bold {
     letter-spacing: 0;
     text-align: center;
     transform: translate(-50%, 15px);
-    color: var(--background-color);
+    color: var(--white-color);
 }
 
 .about-me {
@@ -349,18 +347,18 @@ b.max-bold {
     margin-top: -5px;
     display: block;
     border-radius: 10px;
-    border: 2px solid var(--background-color);
+    border: 2px solid var(--white-color);
 }
 
 .about-me-text-first {
-    color: var(--background-color);
+    color: var(--white-color);
     max-width: 800px; 
     word-wrap: break-word; 
     margin-bottom: 20px;
 }
 
 .about-me-text-second {
-    color: var(--background-color);
+    color: var(--white-color);
     max-width: 800px; 
     word-wrap: break-word;
 }
@@ -382,7 +380,7 @@ b.max-bold {
     margin-top: -5px;
     display: block;
     border-radius: 10px;
-    border: 2px solid var(--background-color);
+    border: 2px solid var(--white-color);
 }
 
 .work-image {
@@ -409,7 +407,7 @@ b.max-bold {
     margin-top: -5px;
     display: block;
     border-radius: 10px;
-    border: 2px solid var(--background-color);
+    border: 2px solid var(--white-color);
 }
 
 .tools-grid {
@@ -478,7 +476,7 @@ b.max-bold {
     height: 16px;
     border-radius: 10px;
     z-index: 1;
-    box-shadow: 0 0 0 8px var(--background-color3);
+    box-shadow: 0 0 0 8px var(--education-shadow-color);
     background: var(--highlight-color);
 }
 
@@ -501,7 +499,7 @@ b.max-bold {
     height: inherit;
     margin: 0 auto;
     pointer-events: all;
-    color: var(--background-color0);
+    color: var(--white-color);
     border: var(--modal-color) 5px solid;
     background-color: var(--footer-background);
 }
@@ -559,7 +557,7 @@ body {
 
 .tools-item h5 {
     margin-bottom: 10px;
-    color: var(--background-color);
+    color: var(--white-color);
     text-align: center;
 }
 
@@ -569,4 +567,32 @@ body {
     border-radius: 50%;
     flex-shrink: 0;
     text-align: center;
+}
+
+.navbar-custom-space {
+    background-color: var(--intro-background-color);
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-custom {
+    background-color: var(--navbar-color);
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-custom a {
+    color: var(--navbar-text-color); /* Adjust link color as needed */
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size as needed */
 }
